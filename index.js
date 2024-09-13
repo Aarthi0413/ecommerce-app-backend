@@ -27,7 +27,7 @@ connectDB()
     console.error("Error connecting to MongoDB:", err.message);
   });
 
-const PORT = 5000;
+const PORT = 3000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
