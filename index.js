@@ -8,9 +8,9 @@ const router = require("./routes/index");
 const app = express();
 app.use(cors(
   {
-    origin: process.env.FRONTEND_URL,
+    origin: "https://ecommerce-app-frontend-js3l.onrender.com",
     credentials: true,
-    allowedHeaders:["Content-Type","Authorization"]
+    allowedHeaders:['Content-Type', 'Authorization']
   }
 ));
 app.use(express.json());
