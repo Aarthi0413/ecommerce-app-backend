@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const addToCartSchema = new mongoose.Schema({
   productId: {
     ref:'Product',
-    type:String
+    type: mongoose.Schema.Types.ObjectId
   },
   quantity: Number,
   userId: String,

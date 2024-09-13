@@ -10,6 +10,7 @@ app.use(cors(
   {
     origin: process.env.FRONTEND_URL,
     credentials: true,
+    allowedHeaders: ['Content-Type,Authorization']
   }
 ));
 app.use(express.json());
@@ -27,7 +28,7 @@ connectDB()
     console.error("Error connecting to MongoDB:", err.message);
   });
 
-const PORT = process.env.PORT || 3000;
+const PORT = 5000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
