@@ -17,6 +17,8 @@ app.use(cookieParser());
 
 app.use("/api", router);
 
+console.log("front end url", process.env.FRONTEND_URL)
+
 connectDB()
   .then(() => {
     console.log("MongoDB connected");
