@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const User = require('../models/userModel')
 
 const OrderSchema = new mongoose.Schema({
     productDetails: {
@@ -11,8 +10,8 @@ const OrderSchema = new mongoose.Schema({
         default:""
     },
     userId:{
-        ref:'User',
-        type:mongoose.Schema.Types.ObjectId
+        type: String,
+        default:""
     },
     paymentDetails:{
         paymentId:{
